@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+#container{
+    background: #0a0a23;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#content{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#logo{
+    width: 250px;
+}
+#content h1{
+    font-size: 2.5rem;
+}
+
+#form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    color: #0a0a23;
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    border-bottom: .8rem solid #2020a7;
+}
+#form p{
+    color: rgb(154, 141, 124);
+    font-size: 1.2rem;
+}
+#string{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#string input{
+    padding: .5rem;
+    margin-right: 1rem;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 3px solid #2020a7;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#string #btn{
+    background-color: #2020a7;
+    color: aliceblue;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+#info{
+    max-width: 500px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #046d40;
+    border-radius: 1rem;
+    text-align: justify;
+}
+
+#output {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(135, 135, 113);
+    letter-spacing: 3px;
+    max-width: 300px;
+    overflow-x: auto; /* Enable scrolling only when necessary */
+    scroll-behavior: smooth;
+    /* white-space: nowrap; Prevent line breaks so content scrolls horizontally */
+}
+
+/* Hide scrollbar for webkit browsers */
+#output::-webkit-scrollbar {
+    display: none;
+}
+
+/* For other browsers, add scrollbar visibility as optional (customizable) */
+#output {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    position: relative;
+    background: #f4f4f4;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    background-color: #e4e2e2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#header-img{
+    width: 300px;
+}
+#header-img img{
+    width: 100%;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+#nav-bar .nav-link{
+    color: rgb(108, 75, 226);
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+#form{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+#form input[type="email"]{
+    padding:0.5rem 1rem;
+    width: 50%;
+    outline: 0;
+    border: 1px solid #676161;
+}
+
+#form input[type="submit"]{
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    background-color: yellow;
+    outline: 0;
+    border: 1px solid #676161;
+    cursor: pointer;
+    color: blue;
+}
+
+#features{
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 3rem;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.features-ico i{
+    width: 100px;
+    color: rgb(244, 172, 37);
+}
+.feature-head{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+#how_it_works{
+    width: 500px;
+    margin: 5rem auto;
+    height: 315px;
+}
+#how_it_works iframe{
+    width: 100%;
+    height: 100%;
+}
+#pricing{
+    margin: 7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 3rem;
+}
+.card{
+    width: 250px;
+    border: 1px solid #4f4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-head{
+    padding: 1rem;
+    background-color: #9c9696;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.card-body{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.desc{
+    text-align: center;
+    line-height: 2rem;
+}
+.button{
+    margin-top: 2rem;
+    background: yellow;
+    color: blue;
+    padding: .8rem 2rem;
+    border: 1px solid #676161;
+    cursor: pointer;
+    font-weight: 600;
+}
+#footer{
+    padding:1.5rem 3rem;
+    background-color: #e4e2e2;
+}
+#footer ul,p {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    color: #4f4c4c;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+#footer p{
+    font-size: .8rem;
+    cursor: text;
+}
+@media(max-width:480px){
+    #header{
+        padding: 1rem 2rem;
+    }
+}

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+    position: relative;
+}
+#navbar{
+    border-right: 2px solid #615d5d;
+    position: fixed;
+    left: 0;
+    background: #f4f4f4;
+    height: 100vh;
+}
+
+#nav-content h2{
+    padding: 1rem;
+    text-align: center;
+}
+.nav-link{
+    border-top: 1px solid #615d5d;
+    padding: 1rem;
+}
+.nav-link:last-child{
+    border-bottom: 1px solid #615d5d;
+}
+
+#navbar .nav-link a{
+    text-decoration: none;
+    color: #615d5d;
+}
+
+
+/* main-doc */
+#main-doc{
+    padding: 1.5rem;
+    margin-left: 18rem;
+}
+
+
+.main-section .heading{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.main-section .para{
+    margin: 0 1rem 1rem 1rem;
+}
+
+.main-section .list{
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.main-section .list li{
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.main-section .inner{
+    margin-top: 10px;
+}
+
+.main-section .code {
+    background-color: #f7f7f7;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 2rem;
+    padding: 0.5rem; /* Add spacing inside the code block */
+    margin-bottom: 1rem; /* Adjust margin for spacing below the code block */
+    line-height: 1.5rem;
+}
+
+@media (max-width: 890px) {
+    #navbar{
+    position: absolute;
+    height: 30vh;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: 100;
+    border: 1px solid #615d5d;
+}
+#navbar h2{
+    /* position: fixed; */
+    text-align: center;
+    left: 15rem;
+}
+.nav-link{
+    border-right: 1px solid #615d5d;
+
+}
+#main-doc{
+    margin-left: 0;
+    margin-top: 10rem;
+}
+}
