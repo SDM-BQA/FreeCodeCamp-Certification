@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+#container {
+  display: flex;
+  /* align-items: center; */
+  background-color: #1b1b32;
+  color: aliceblue;
+  padding: 2rem;
+  /* height: 100vh; */
+}
+#content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+#content img {
+  width: 300px;
+}
+#content h1 {
+  font-size: 2rem;
+}
+#content #main {
+  border-radius: 1rem;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+#content #main #title {
+  font-size: 1.2rem;
+  color: #4a4a63;
+  margin-bottom: 1rem;
+}
+#content #main #input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+#content #main #input #search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+  outline: 0;
+}
+#content #main #input #search-input:focus {
+  outline: 1px solid rgb(89, 89, 212);
+}
+#content #main #input #search-button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  background-color: purple;
+  color: aliceblue;
+  outline: 0;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+#content #main #basic-info {
+  color: #4a4a63;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#content #main #basic-info p:first-child {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#content #main #basic-info p:nth-child(2) {
+  font-size: 1.1rem;
+}
+#content #main #sprite {
+  width: 200px;
+  /* margin: 1rem auto; */
+}
+#content #main #types {
+  color: #000;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+#content #main #types span {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+#content #main #info {
+  color: #1b1b32;
+  text-align: center;
+  width: 100%;
+}
+#content #main #info th,
+td {
+  background: purple;
+  color: aliceblue;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+#content #main #info th:first-child,
+td:first-child {
+  width: 65%;
+}
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fighting {
+  background-color: #d3887e;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ground {
+  background-color: #dfba52;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
+@media (max-width: 500px) {
+  #input {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #input button {
+    width: 70%;
+  }
+}
